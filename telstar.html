@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<title>Antena Inter Intercable Satelital Telstar12 alinear alineacion tv parrilla venezuela</title>
+    	
+  <meta charset='utf-8'>
+  <meta name="author" content="aregonet">
+ <meta name="description" content="antena de inter, intercable Con esta herramienta podrás alinear tu antena satelital con el satelite TELSTAR 12V 15W.">
+ <meta name="keywords" content="antena, satelital, intercable, inter, telstar12,"/>
+ <meta property="og:image" content="https://aregonet.com/AREGONET.png">
+  <meta name="robots" content="index"/>
+  <meta name="googlebot" content="index" />
+  <meta name="robots"  content="index,follow"  />
+  <title>Satelite Intercable 15W Telstar 12V 15W</title>
+  <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.2.0/dist/leaflet.css" />
+  <script src="https://npmcdn.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script src="https://npmcdn.com/leaflet.path.drag/src/Path.Drag.js"></script>
+   <script src="https://aregonet.com/src/Leaflet.Editable.js"></script>
+    <link rel="stylesheet" href="./leaflet.measure.css"/>
+    <script src="./leaflet.measure.js"></script>
+   <link rel="shortcut icon" type="image/x-icon" href="https://aregonet.com/favicon.ico" />
+ <meta http-equiv="Expires" content="0">
+
+    <meta http-equiv="Last-Modified" content="0">
+    
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    
+    <meta http-equiv="Pragma" content="no-cache">
+
+  <style type='text/css'>
+
+      body {
+	    background-color:gray;
+	    font-family:verdana,arial,sans-serif;
+	}
+
+	#map {
+	    height: 500px;
+	    width: 1000px;
+	    border-radius: 5px;
+	    background:#111;
+	}
+
+	img {
+	    background-color:white;
+	}
+	
+</style>
+
+</head>
+<body>
+
+  
+   <center>
+    <h2>INTER SATELITAL</h2>
+    Con esta herramienta podrás alinear tu antena satelital con el satelite TELSTAR 12V 15W.
+    <p>
+    
+    </p>
+<div id='map'></div>
+    <p>
+    ELABORADO POR <a href="http://AREGONET.COM">AREGONET</a>
+    <p>
+    <p>
+    <small><a href="http://AREGONET.COM">AREGONET</a> 2021</small>
+    </p>
+	<body>
+  <center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4777690286582485"
+     crossorigin="anonymous"></script>
+<!-- medio cuerpo -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4777690286582485"
+     data-ad-slot="6382092551"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></center>
+&nbsp;
+ <div>  <img src="../AZIMUT.png" ></div>
+ <div>  <img src="../AZIMUT2.png" ></div>
+    </center>
+
+
+<script>
+var startPoint = [6.887209235428714, -66.47245457487304];
+	var map = L.map('map', {editable: true}).setView(startPoint, 16),
+    tilelayer = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {maxZoom: 20, attribution: 'Data \u00a9 <a href="http://www.openstreetmap.org/copyright"> OpenStreetMap Contributors </a> Tiles \u00a9 HOT'}).addTo(map);
+
+	function onLocationFound(e) {
+		var radius = e.accuracy / 2;
+
+		L.marker(e.latlng).addTo(map)
+			.bindPopup("Tu Antena " + radius + " Esta Alineada").openPopup();
+
+		L.circle(e.latlng, radius).addTo(map);
+		   var line = L.polyline([(e.latlng),[6.887209235428714, -66.47245457487304],
+        
+    ]).addTo(map);
+var plugin = L.control.measure({
+        //  control position
+        position: 'topleft',
+        //  weather to use keyboard control for this plugin
+        keyboard: true,
+        //  shortcut to activate measure
+        activeKeyCode: 'M'.charCodeAt(0),
+        //  shortcut to cancel measure, defaults to 'Esc'
+        cancelKeyCode: 27,
+        //  line color
+        lineColor: 'red',
+        //  line weight
+        lineWeight: 2,
+        //  line dash
+        lineDashArray: '6, 6',
+        //  line opacity
+        lineOpacity: 1,
+        //  distance formatter
+        // formatDistance: function (val) {
+        //   return Math.round(1000 * val / 1609.344) / 1000 + 'mile';
+        // }
+      }).addTo(map)
+
+	}
+
+	function onLocationError(e) {
+		alert(e.message);
+	}
+
+	map.on('locationfound', onLocationFound);
+	map.on('locationerror', onLocationError);
+
+	map.locate({setView: true, maxZoom: 16});
+
+
+
+  
+
+
+</script>
+</body>
+
+</html>
